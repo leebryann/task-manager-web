@@ -43,4 +43,72 @@ A simple task management application built with **ReactJS** (frontend) and **Spr
 ---
 
 ## 📂 Project Structure
+task-manager-web/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── LoginForm.js
+│ │ ├── TaskList.js
+│ │ └── TaskForm.js
+│ ├── services/
+│ │ ├── AuthService.js
+│ │ └── TaskService.js
+│ ├── App.js
+│ └── index.js
 
+---
+
+## 🛠 Running Frontend in Development
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the React app:
+
+```bash
+npm run start
+```
+Make sure the backend (Spring Boot) is running on localhost:8080.
+
+--- 
+
+## 🔐 Authentication
+JWT is stored in localStorage after login.
+
+Requests to protected endpoints include the token in the Authorization header.
+
+If the token is missing or invalid, users are redirected to the login page.
+
+---
+
+## 📸 UI Preview
+Feature	Screenshot
+Task List	✅ Shows title, description, complete status
+
+![alt text](./src/resources/images/task-list.png)
+
+Task Filter	✅ All / Completed / Incomplete
+
+![alt text](./src/resources/images/all.png)
+
+![alt text](./src/resources/images/completed.png)
+
+![alt text](./src/resources/images/incomplete.png)
+
+Task Actions	✅ Edit, Delete, Mark Done
+
+![alt text](./src/resources/images/edit.png)
+
+![alt text](./src/resources/images/done.png)
+
+![alt text](./src/resources/images/delete.png)
+
+Add Task	✅ Form routed via React Router
+
+![alt text](./src/resources/images/add.png)
+
+Login	✅ JWT secured login page
+
+![alt text](./src/resources/images/login.png)
