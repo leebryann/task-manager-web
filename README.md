@@ -43,18 +43,21 @@ A simple task management application built with **ReactJS** (frontend) and **Spr
 ---
 
 ## 📂 Project Structure
+
+```text
 task-manager-web/
 ├── public/
 ├── src/
-│ ├── components/
-│ │ ├── LoginForm.js
-│ │ ├── TaskList.js
-│ │ └── TaskForm.js
-│ ├── services/
-│ │ ├── AuthService.js
-│ │ └── TaskService.js
-│ ├── App.js
-│ └── index.js
+│   ├── components/
+│   │   ├── LoginForm.js
+│   │   ├── TaskList.js
+│   │   └── TaskForm.js
+│   ├── services/
+│   │   ├── AuthService.js
+│   │   └── TaskService.js
+│   ├── App.js
+│   └── index.js
+```
 
 ---
 
@@ -85,11 +88,11 @@ If the token is missing or invalid, users are redirected to the login page.
 
 ## 📸 UI Preview
 Feature	Screenshot
-Task List	✅ Shows title, description, complete status
+- Task List	✅ Shows title, description, complete status
 
 ![alt text](./src/resources/images/task-list.png)
 
-Task Filter	✅ All / Completed / Incomplete
+- Task Filter	✅ All / Completed / Incomplete
 
 ![alt text](./src/resources/images/all.png)
 
@@ -97,7 +100,7 @@ Task Filter	✅ All / Completed / Incomplete
 
 ![alt text](./src/resources/images/incomplete.png)
 
-Task Actions	✅ Edit, Delete, Mark Done
+- Task Actions	✅ Edit, Delete, Mark Done
 
 ![alt text](./src/resources/images/edit.png)
 
@@ -105,10 +108,10 @@ Task Actions	✅ Edit, Delete, Mark Done
 
 ![alt text](./src/resources/images/delete.png)
 
-Add Task	✅ Form routed via React Router
+- Add Task	✅ Form routed via React Router
 
 ![alt text](./src/resources/images/add.png)
 
-Login	✅ JWT secured login page
+- Login	✅ JWT secured login page
 
 ![alt text](./src/resources/images/login.png)
