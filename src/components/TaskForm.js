@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { createTask } from '../services/TaskService';
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom'; // ✅ add this
+import { useNavigate } from 'react-router-dom';
 
 function TaskForm({ onTaskCreated }) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const navigate = useNavigate(); // ✅ add this
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,10 +17,10 @@ function TaskForm({ onTaskCreated }) {
       setDescription("");
 
       if (onTaskCreated) {
-        onTaskCreated(); // used when embedded inside TaskList
+        onTaskCreated();
       }
 
-      navigate("/tasks"); // ✅ redirect after creation
+      navigate("/tasks");
     } catch (error) {
       toast.error("Failed to add task.");
     }

@@ -57,7 +57,7 @@ function TaskList() {
   };
 
   const openEditModal = (task) => {
-    setSelectedTask({ ...task }); // clone to avoid direct state mutation
+    setSelectedTask({ ...task });
     setShowModal(true);
   };
 
@@ -97,7 +97,6 @@ function TaskList() {
   return (
     <div>
       <div className="mb-3 d-flex justify-content-between align-items-center">
-        {/* Search Bar on the left */}
         <input
           type="text"
           className="form-control me-3"
@@ -107,7 +106,6 @@ function TaskList() {
           style={{ maxWidth: "1000px" }}
         />
 
-        {/* Buttons on the right */}
         <div className="d-flex align-items-center gap-2">
           <button
             className={`btn btn-sm ${filter === "all" ? "btn-primary" : "btn-outline-primary"}`}
@@ -165,7 +163,6 @@ function TaskList() {
         </ul>
       )}
 
-      {/* Modal */}
       {showModal && selectedTask && (
         <div className="modal show d-block" tabIndex="-1" role="dialog" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
           <div className="modal-dialog" role="document">

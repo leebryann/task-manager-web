@@ -13,7 +13,7 @@ function LoginForm() {
     try {
       await login(username, password);
       toast.success("Login successful");
-      navigate("/tasks"); // or your main route
+      navigate("/tasks");
     } catch (err) {
       toast.error("Invalid credentials");
     }
